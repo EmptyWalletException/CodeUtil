@@ -8,7 +8,7 @@
 #### 使用说明
 
 1. 配置主目录下的publicMap.xml文件中的所有标签的value值;
-2. 进入src/main/java/ui 文件夹,点卡DataBaseUtil类,启动此类中的main方法,会弹出一个swing绘制的对话框:
+2. 进入src/main/java 文件夹,点开Start类,启动此类中的main方法,会弹出一个swing绘制的对话框:
 
     ![](屏幕草图/草图.png)
         

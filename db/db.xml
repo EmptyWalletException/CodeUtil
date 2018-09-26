@@ -1,37 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<db name="toptalk_recruit" driverName="com.mysql.jdbc.Driver" userName="root" passWord="ljj19940228" url="jdbc:mysql://127.0.0.1:3306/toptalk_recruit?characterEncoding=UTF8">
+<db name="toptalk_qa" driverName="com.mysql.jdbc.Driver" userName="root" passWord="ljj19940228" url="jdbc:mysql://127.0.0.1:3306/toptalk_qa?characterEncoding=UTF8">
   <property name="databaseTYPE">MYSQL</property>
   <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
   <property name="generator">&lt;![CDATA[&lt;generator class="native"&gt;&lt;/generator&gt;]]&gt;</property>
   <property name="driverName">com.mysql.jdbc.Driver</property>
-  <property name="url">jdbc:mysql://127.0.0.1:3306/toptalk_recruit?characterEncoding=UTF8</property>
-  <table name="tb_enterprise" name2="enterprise" comment="" key="id">
+  <property name="url">jdbc:mysql://127.0.0.1:3306/toptalk_qa?characterEncoding=UTF8</property>
+  <table name="tb_problem" name2="problem" comment="" key="id">
     <column name="id" name2="id" type="String" dbtype="VARCHAR" comment="ID" key="PRI" decimal_digits="0" colums_size="20"/>
-    <column name="name" name2="name" type="String" dbtype="VARCHAR" comment="\u4f01\u4e1a\u540d\u79f0" key="" decimal_digits="0" colums_size="100"/>
-    <column name="summary" name2="summary" type="String" dbtype="VARCHAR" comment="\u4f01\u4e1a\u7b80\u4ecb" key="" decimal_digits="0" colums_size="1000"/>
-    <column name="address" name2="address" type="String" dbtype="VARCHAR" comment="\u4f01\u4e1a\u5730\u5740" key="" decimal_digits="0" colums_size="100"/>
-    <column name="labels" name2="labels" type="String" dbtype="VARCHAR" comment="split with &quot;,&quot;" key="" decimal_digits="0" colums_size="100"/>
-    <column name="coordinate" name2="coordinate" type="String" dbtype="VARCHAR" comment="\u5750\u6807" key="" decimal_digits="0" colums_size="100"/>
-    <column name="ishot" name2="ishot" type="String" dbtype="VARCHAR" comment="\u662f\u5426\u70ed\u95e8" key="" decimal_digits="0" colums_size="1"/>
-    <column name="logo" name2="logo" type="String" dbtype="VARCHAR" comment="LOGO" key="" decimal_digits="0" colums_size="100"/>
-    <column name="jobcount" name2="jobcount" type="Integer" dbtype="INT" comment="\u804c\u4f4d\u6570" key="" decimal_digits="0" colums_size="10"/>
-    <column name="url" name2="url" type="String" dbtype="VARCHAR" comment="URL" key="" decimal_digits="0" colums_size="100"/>
-  </table>
-  <table name="tb_recruit" name2="recruit" comment="" key="id">
-    <column name="id" name2="id" type="String" dbtype="VARCHAR" comment="ID" key="PRI" decimal_digits="0" colums_size="20"/>
-    <column name="jobname" name2="jobname" type="String" dbtype="VARCHAR" comment="\u804c\u4f4d\u540d\u79f0" key="" decimal_digits="0" colums_size="100"/>
-    <column name="salary" name2="salary" type="String" dbtype="VARCHAR" comment="\u85aa\u8d44\u8303\u56f4" key="" decimal_digits="0" colums_size="100"/>
-    <column name="condition" name2="condition" type="String" dbtype="VARCHAR" comment="\u7ecf\u9a8c\u8981\u6c42" key="" decimal_digits="0" colums_size="100"/>
-    <column name="education" name2="education" type="String" dbtype="VARCHAR" comment="\u5b66\u5386\u8981\u6c42" key="" decimal_digits="0" colums_size="100"/>
-    <column name="type" name2="type" type="String" dbtype="VARCHAR" comment="\u4efb\u804c\u65b9\u5f0f" key="" decimal_digits="0" colums_size="1"/>
-    <column name="address" name2="address" type="String" dbtype="VARCHAR" comment="\u529e\u516c\u5730\u5740" key="" decimal_digits="0" colums_size="100"/>
-    <column name="eid" name2="eid" type="String" dbtype="VARCHAR" comment="\u4f01\u4e1aID" key="" decimal_digits="0" colums_size="20"/>
+    <column name="title" name2="title" type="String" dbtype="VARCHAR" comment="\u6807\u9898" key="" decimal_digits="0" colums_size="100"/>
+    <column name="content" name2="content" type="String" dbtype="TEXT" comment="\u5185\u5bb9" key="" decimal_digits="0" colums_size="65535"/>
     <column name="createtime" name2="createtime" type="java.util.Date" dbtype="DATETIME" comment="\u521b\u5efa\u65e5\u671f" key="" decimal_digits="0" colums_size="19"/>
-    <column name="state" name2="state" type="String" dbtype="VARCHAR" comment="\u72b6\u6001" key="" decimal_digits="0" colums_size="1"/>
-    <column name="url" name2="url" type="String" dbtype="VARCHAR" comment="\u7f51\u5740" key="" decimal_digits="0" colums_size="100"/>
-    <column name="label" name2="label" type="String" dbtype="VARCHAR" comment="\u6807\u7b7e" key="" decimal_digits="0" colums_size="100"/>
-    <column name="content1" name2="content1" type="String" dbtype="VARCHAR" comment="\u804c\u4f4d\u63cf\u8ff0" key="" decimal_digits="0" colums_size="100"/>
-    <column name="content2" name2="content2" type="String" dbtype="VARCHAR" comment="\u804c\u4f4d\u8981\u6c42" key="" decimal_digits="0" colums_size="100"/>
+    <column name="updatetime" name2="updatetime" type="java.util.Date" dbtype="DATETIME" comment="\u4fee\u6539\u65e5\u671f" key="" decimal_digits="0" colums_size="19"/>
+    <column name="userid" name2="userid" type="String" dbtype="VARCHAR" comment="\u7528\u6237ID" key="" decimal_digits="0" colums_size="20"/>
+    <column name="nickname" name2="nickname" type="String" dbtype="VARCHAR" comment="\u6635\u79f0" key="" decimal_digits="0" colums_size="100"/>
+    <column name="visits" name2="visits" type="Long" dbtype="BIGINT" comment="\u6d4f\u89c8\u91cf" key="" decimal_digits="0" colums_size="19"/>
+    <column name="thumbup" name2="thumbup" type="Long" dbtype="BIGINT" comment="\u70b9\u8d5e\u6570" key="" decimal_digits="0" colums_size="19"/>
+    <column name="reply" name2="reply" type="Long" dbtype="BIGINT" comment="\u56de\u590d\u6570" key="" decimal_digits="0" colums_size="19"/>
+    <column name="solve" name2="solve" type="String" dbtype="VARCHAR" comment="\u662f\u5426\u89e3\u51b3" key="" decimal_digits="0" colums_size="1"/>
+    <column name="replyname" name2="replyname" type="String" dbtype="VARCHAR" comment="\u56de\u590d\u4eba\u6635\u79f0" key="" decimal_digits="0" colums_size="100"/>
+    <column name="replytime" name2="replytime" type="java.util.Date" dbtype="DATETIME" comment="\u56de\u590d\u65e5\u671f" key="" decimal_digits="0" colums_size="19"/>
   </table>
 </db>

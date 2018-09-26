@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <root>
-  <map key="path_3" value="recruit"/>
-  <map key="package" value="com.toptalk.recruit"/>
+  <map key="path_3" value="qa"/>
+  <map key="package" value="com.toptalk.qa"/>
   <map key="path_2" value="toptalk"/>
   <map key="dbpassword" value="ljj19940228"/>
   <map key="author" value="MasterCV"/>
@@ -10,6 +10,6 @@
   <map key="project" value="toptalk"/>
   <map key="dbuser" value="root"/>
   <map key="path_1" value="com"/>
-  <map key="db" value="toptalk_recruit"/>
-  <map key="path_all" value="com/toptalk/recruit"/>
+  <map key="db" value="toptalk_qa"/>
+  <map key="path_all" value="com/toptalk/qa"/>
 </root>
